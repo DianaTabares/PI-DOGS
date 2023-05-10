@@ -1,0 +1,10 @@
+.styleButton{
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+}
+.styleButton:hover {
+    background-color: #008CBA;
+    color: white;
+}

@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import {addDogs} from './redux/action.js';
 import LandingPage from './components/landingPage';
 import NavBar from './components/NavBar';
+import Detail from './components/Detail'
 
 
 function App() {
@@ -30,13 +31,13 @@ async function onSearch(name) {
   return (
     <div className="App">
     {location.pathname !== "/" && <NavBar onSearch={onSearch} />}
-      <h1>Henry Dogs</h1>
+      <h1>Dogs</h1>
       <Routes>
         <Route path="/" element={<LandingPage></LandingPage>} />
         <Route path='/home' element={<Cards></Cards>}></Route>
+        <Route path='/detail/:id' element={<Detail />} />
       </Routes>
     </div>
   );
 }
-
 export default App;
