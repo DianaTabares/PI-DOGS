@@ -1,75 +1,56 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "./Card";
 import { useDispatch, useSelector } from "react-redux";
-import style from "./Cards.module.css";
+import { nextPage, prevPage } from '../redux/action';
+import Error from './Error'
+import style from "../styles/Cards.module.css"
 
 
 // usamos un estado para guardar los perros
-export default function Cards(props) {
-    const { dogs } = useSelector((state) => state)
-    //const dispatch = useDispatch()
+export default function Cards({handleButtonClick}) {
+    const { numPage, dogs, temperaments } = useSelector((state) => state)
+    const dispatch = useDispatch()
 
-    const cardsPerPage = 8; // Número de cartas por página
+    let desde = (numPage - 1) * 8
+    let hasta = numPage * 8
 
-    const [currentPage, setCurrentPage] = useState(1);
+    let cantPages = Math.round(dogs.length / 8)
+    let viewDogs = dogs.slice(desde, hasta)
 
-    const paginate = (pageNumber) => {
-        setCurrentPage(pageNumber);
-    };
-
-    const indexOfLastCard = currentPage * cardsPerPage;
-    const indexOfFirstCard = indexOfLastCard - cardsPerPage;
-    const currentCards = dogs.slice(indexOfFirstCard, indexOfLastCard);
-
-    const pageNumbers = Math.ceil(dogs.length / cardsPerPage);
-
-    const prev = () => {
-        if (currentPage > 1) {
-            setCurrentPage(currentPage - 1);
-        }
-    };
-
-    const next = () => {
-        if (currentPage < pageNumbers) {
-            setCurrentPage(currentPage + 1);
-        }
-    };
-
+    function next() { //handlers del paginado
+        dispatch(nextPage())
+    }
+    function prev() {
+        dispatch(prevPage())
+    }
     return (
-        <div className={style.conteiner}>
-            <div className={style.cards} >
-            {dogs.map((dog) => {
-                const { id, name, age, height, weight, image, temperaments } = dog;
-                return (
-                    <Card
-                        key={id}
-                        id={id}
-                        name={name}
-                        age={age}
-                        height={height}
-                        weight={weight}
-                        image={image}
-                        temperaments={temperaments}
-                    />)
-            })}
-                <div className={style.pagination}>
-                <button onClick={prev} disabled={currentPage === 1}>
-                    Anterior
-                </button>
-                {Array.from({ length: pageNumbers }).map((_, index) => (
-                    <button
-                        key={index + 1}
-                        onClick={() => paginate(index + 1)}
-                        className={index + 1 === currentPage ? style.active : null}
-                    >
-                        {index + 1}
-                    </button>
-                ))}
-                <button onClick={next} disabled={currentPage === pageNumbers}>
-                    Siguiente
-                </button>
-            </div>
+        <div>
+            {dogs.length === 0 && temperaments.length === 0 && <Error/>}
+            <div className={style.homeContainer}>
+                <svg className={numPage > 1 ? 'style.buttonEnabled' : "style.buttonDisabled"} onClick={numPage > 1 ? prev : null} xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" strokeWidth="2.5" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="15 6 9 12 15 18" />
+                </svg>
+                <div className={style.cardGrid}>
+                    {viewDogs.map((d) => {
+                        const { id, name, age, height, weight, image, temperaments } = d
+                        return (<Card key={id}
+                            id={id}
+                            name={name}
+                            age={age}
+                            temperaments={temperaments}
+                            height={height}
+                            weight={weight}
+                            image={image}
+                            handleButtonClick={handleButtonClick}
+                        />)
+                    })}
+                </div>
+                <svg className={numPage < cantPages ? 'style.buttonEnabled' : "style.buttonDisabled"} onClick={numPage < cantPages ? next : null} xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" strokeWidth="2.5" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="9 6 15 12 9 18" />
+                </svg>
             </div>
         </div>
-    );
+    )
 }

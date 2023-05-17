@@ -8,6 +8,7 @@ import {addDogs} from './redux/action.js';
 import LandingPage from './components/landingPage';
 import NavBar from './components/NavBar';
 import Detail from './components/Detail'
+import FormPage from './components/FormPage';
 
 
 function App() {
@@ -36,6 +37,7 @@ async function onSearch(name) {
         <Route path="/" element={<LandingPage></LandingPage>} />
         <Route path='/home' element={<Cards></Cards>}></Route>
         <Route path='/detail/:id' element={<Detail />} />
+        <Route path='/Create' element={<FormPage />} />
       </Routes>
     </div>
   );

@@ -1,0 +1,62 @@
+.dog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(146, 249, 249, 0.665);
+    width: auto;
+    padding: 4%;
+    padding-bottom: 10%;
+}
+
+.dogheader {
+    margin-top: -30PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:1.5rem;
+    font-family: 'Tahoma', Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 15px;
+    text-shadow: 0px 0px 5px rgba(244, 242, 149);
+}
+
+.dogcontent {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(70, 248, 248);
+    margin: 0px 100px 0px 100px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.344);
+    box-shadow: 0px 0px 3px rgb(249, 243, 128);
+}
+
+
+.dogcontent img {
+    max-width: 60%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.dogs {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    height: max-content;
+    flex-direction: column;
+    border-radius: 0px 20px 20px 0px;
+}
+.dogs p{
+    margin: 0;
+}
+
+fieldset {
+    border: 0px;
+    border-bottom: 2px solid rgb(132, 255, 255);
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.cardText {
+    font-size: 16px;
+    margin: 5px 0;
+}

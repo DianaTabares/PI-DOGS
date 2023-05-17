@@ -1,0 +1,30 @@
+.errorContainer {
+    background-color: rgb(64, 245, 229);
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.displayError {
+    color: rgb(248, 243, 243);
+    display: flex;
+    justify-content: baseline;
+    background-color: rgb(64, 245, 229);
+    box-shadow: 0px 0px 85px rgb(249, 237, 78);
+    flex-direction: column;
+    width: 240px;
+    height: 620px;
+    text-align: center;
+    padding: 74px;
+}
+
+.errorContainer img {
+    border-radius: 100%;
+    box-shadow: 0px 0px 85px rgb(249, 237, 78);
+    border: 2px solid rgb(69, 247, 226);
+    margin: auto;
+    margin-top: 20px;
+}

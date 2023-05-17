@@ -1,0 +1,16 @@
+import React from 'react';
+import style from "../styles/Error.module.css"
+
+export default function Error() {
+    return (
+        <div className={style.errorContainer}>
+            <div className={style.displayError}>
+                <h1>Error 404</h1>
+                <h2>The connection to the server has failed</h2>
+                <h3> or </h3>
+                <h2>a non-existent route has been entered</h2>
+            </div>
+            <img src='https://st.depositphotos.com/1229718/4152/i/600/depositphotos_41528755-stock-photo-lost-pet.jpg' alt="dogcriying"></img>
+        </div>
+    )
+}
