@@ -83,7 +83,7 @@ export default function Form({ handleButtonClick }) {
             <h1>Create or insert your dog</h1>
             <div className={style.formContent}>
                 <div className={style.imageContainer}>
-                    <img src={errors.image || !dogData.image ? "https://webstockreview.net/images/clipart-clock-dog-2.png" : dogData.image} alt="dogImage" />
+                    <img src={errors.image || !dogData.image ? "https://img.freepik.com/vector-gratis/lindo-perro-sacando-lengua-ilustracion-icono-dibujos-animados_138676-2709.jpg?size=626&ext=jpg&ga=GA1.2.667252283.1677349711&semt=ais" : dogData.image} alt="dogImage" />
                 </div>
                 <div className={style.formFields}>
                     <form>

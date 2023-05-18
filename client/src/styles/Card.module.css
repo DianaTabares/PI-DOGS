@@ -10,8 +10,8 @@
 }
 
 .cardContainer h2 {
-  color: rgb(246, 248, 243);
-  background-color: rgba(0, 255, 81, 0.553);
+  color: rgb(30, 48, 244);
+  background-color: rgba(88, 250, 253);
   width: 70%;
   font-size: 0.9rem;
   white-space: wrap;
@@ -25,9 +25,9 @@
 }
 
 .cardContainer p {
-  color: rgb(255, 255, 255);
+  color: rgb(30, 48, 244);
   width: 50%;
-  background-color: rgba(0, 255, 81, 0.553);
+  background-color: rgba(88, 250, 253);
   font-size: 0.9rem;
   white-space: nowrap;
   text-overflow:ellipsis;
@@ -42,10 +42,10 @@
 
 .cardContainer li {
   display: block;
-  color: rgb(252, 252, 252);
+  color: rgb(30, 48, 244);
   font-size: 0.8rem;
   margin: 5px;
-  text-shadow: 0px 0px 8px black;
+  text-shadow: 0px 0px 8px hsl(57, 92%, 59%);
   transition: transform 2.5s;
 }
 
@@ -67,8 +67,8 @@
   width: 208px;
   height: 252px;
   background: rgba(248, 237, 22, 0.915);
-  border: 3px solid rgb(229, 241, 6);
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  border: 3px solid rgb(248, 249, 247);
+  box-shadow: 12px 17px 51px rgba(255, 255, 255);
   backdrop-filter: blur(6px);
   border-radius: 17px;
   text-align: center;
@@ -86,7 +86,7 @@
 }
 
 .cardContainer:hover {
-  border: 3px solid rgb(250, 247, 247);
+  border: 3px solid rgb(195, 100%, 40%);
   transform: scale(1.05);
   box-shadow: 0px 0px 2px rgb(193, 0, 0);
 }
@@ -100,8 +100,8 @@
 }
 
 .cardContainer:hover h2 {
-  color: rgb(255, 255, 255);
-  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.534);
+  color: rgb(30, 48, 244);
+  text-shadow: 0px 0px 4px rgba(57, 92%, 59%);
 }
 
 .cardContainer:hover p {

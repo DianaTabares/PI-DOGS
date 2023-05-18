@@ -1,5 +1,5 @@
 .navContainer {
-    background-color:rgb(242, 245, 247);
+    background-color:rgb(88, 250, 253);
     display: flex;
     justify-content: space-around;
     margin: auto;
@@ -28,7 +28,7 @@
     border-radius: 8px;
     outline: none;
     background-color: #f3f3f4;
-    color: #36faf0;
+    color: rgb(88, 250, 253);
     transition: .3s ease;
 }
 
@@ -39,9 +39,9 @@
 .input:focus,
 .input:hover {
     outline: none;
-    border-color: rgba(94, 243, 248);
+    border-color: rgb(88, 250, 253);
     background-color: #fff;
-    box-shadow: 0 0 0 4px rgba(81, 245, 78);
+    box-shadow: 0 0 0 4px rgb(255, 255, 255);
 }
 
 .icon {
@@ -60,10 +60,10 @@
     right: 24%;
     width: 60%;
     top: 0;
-    background-color: rgb(84, 247, 225);
+    background-color: rgb(88, 250, 253);
     padding: 15px 0px 30px 0px;
     border-radius: 0px 0px 10px 10px;
-    box-shadow: 0px 0px 5px rgb(223, 236, 36);
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
 
 .filterComp button {
@@ -94,7 +94,7 @@
 }
 
 .navContainer select:focus {
-    box-shadow: 0px 0px 5px 2px rgba(222, 242, 39);
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255);
 }
 
 .navContainer select:hover {

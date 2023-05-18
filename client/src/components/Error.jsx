@@ -10,7 +10,7 @@ export default function Error() {
                 <h3> or </h3>
                 <h2>a non-existent route has been entered</h2>
             </div>
-            <img src='https://st.depositphotos.com/1229718/4152/i/600/depositphotos_41528755-stock-photo-lost-pet.jpg' alt="dogcriying"></img>
+            <img src='https://img2.freepng.es/20190730/cut/kisspng-puppy-dog-animation-cartoon-video-pixabay-5d409a7fc28786.4314978315645149437968.jpg' alt="sorry"></img>
         </div>
     )
 }

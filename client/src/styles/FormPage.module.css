@@ -1,5 +1,5 @@
 .create {
-    color: #000;
+    color: rgb(30, 48, 244);
     text-transform: uppercase;
     letter-spacing: 2px;
     display: block;
@@ -13,14 +13,14 @@
     align-items: center;
     justify-content: flex-start;
     padding-bottom: 20px;
-    background-color: rgba(250, 235, 215, 0.694);
+    background-color: rgba(88, 250, 253);
 }
 
 .formContainer h1 {
     font-family: 'Cinzel', serif;
     letter-spacing: 4px;
     font-size:2.5rem;
-    text-shadow: 0px 0px 5px rgb(126, 52, 52);
+    text-shadow: 0px 0px 5px rgb(257, 92%, 59%);
 }
 
 .formContent {
@@ -28,8 +28,8 @@
     width: 80%;
     border-radius: 100px;
     margin-bottom: 50px;
-    border: 4px solid black;
-    box-shadow: 0px 0px 6px red;
+    border: 4px solid rgb(195, 100%, 40%);
+    box-shadow: 0px 0px 6px rgb(255, 255, 255);
 }
 
 .imageContainer {
@@ -37,7 +37,7 @@
     justify-content: center;
     width: 40%;
     padding: 40px;
-    background-color: rgba(0, 0, 0, 0.513);
+    background-color: rgba(249, 246, 246, 0.513);
     border-radius: 96px 0px 0px 96px;
 }
 
@@ -53,7 +53,7 @@
     width: 50%;
     height: 37rem;
     padding: 20px 40px 13% 0px;
-    background-color: rgba(0, 0, 0, 0.513);
+    background-color: rgba(250, 247, 247, 0.513);
     border-radius: 0px 96px 96px 0px;
 }
 
@@ -61,9 +61,9 @@
     display: flex;
     flex-wrap: wrap;
     border-radius: 0 0 50px 0;
-    background-color: rgba(0, 0, 0, 0.402);
+    background-color: rgba(251, 245, 245, 0.402);
     width: 80%;
-    color: white;
+    color: rgb(30, 48, 244);
     max-height: 220px;
     margin: auto;
     overflow: scroll;
@@ -99,8 +99,8 @@
     margin-left: 40px;
     height: 7.5%;
     border-radius: 25px 0px 0px 25px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.313);
+    color: rgb(30, 48, 244);
+    background-color: rgba(88, 250, 253);
 }
 
 .inputBox span {
@@ -127,20 +127,20 @@
 }
 
 .inputBox input:focus {
-    border-bottom: 2px solid #c75b5b;
+    border-bottom: 2px solid #fcf8f8;
     border-radius: 4px 4px 2px 2px;
 }
 
 .inputBox input:hover {
-    outline: 1px solid lightgrey;
+    outline: 1px solid rgb(245, 242, 242);
 }
 
 
 .inputBox p {
-    color: rgb(255, 0, 0);
+    color: rgb(103, 243, 136);
     font-size: 0.900rem;
     position: absolute;
-    background-color: #00000020;
+    background-color: rgb(88, 250, 253);
     right: 10.2%;
     width: 200px;
     white-space: wrap;
@@ -152,22 +152,22 @@
     border-radius: 10px;
     border: 0;
     margin-top: 22px;
-    background-color: rgb(255, 56, 86);
+    background-color: rgb(88, 250, 253);
     letter-spacing: 1px;
     font-size: 10px;
     cursor: pointer;
     transition: all .3s ease;
-    box-shadow: rgb(201, 46, 70) 0px 5px 0px 0px;
+    box-shadow: rgb(255, 255, 255) 0px 5px 0px 0px;
     color: hsl(0, 0%, 100%);
 }
 
 .submitOn:hover {
-    box-shadow: rgb(201, 46, 70) 0px 2px 0px 0px;
+    box-shadow: rgb(255, 255, 255) 0px 2px 0px 0px;
 }
 
 .submitOn:active {
-    background-color: rgb(255, 56, 86);
-    box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+    background-color: rgb(88, 250, 253);
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;
     transform: translateY(5px);
     transition: 200ms;
 }
@@ -177,7 +177,7 @@
     border-radius: 10px;
     border: 0;
     margin-top: 25px;
-    background-color: rgb(139, 139, 139);
+    background-color: rgb(88, 250, 253);
     letter-spacing: 1px;
     font-size: 10px;
     transition: all .3s ease;
